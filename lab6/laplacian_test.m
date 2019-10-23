@@ -1,0 +1,10 @@
+clear;
+f = imread ('blurry-moon.tif');
+f = im2double(f);
+figure(1);
+subplot(2,2,1); imshow(f, [0 1]);
+w = fspecial('laplacian', 0.2);
+g = imfilter(f,w,'replicate');
+subplot(2,2,2); imshow(g,[]);
+subplot(2,2,3); imshow(g);
+subplot(2,2,4); imshow(f-2*g);

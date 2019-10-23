@@ -1,0 +1,14 @@
+clear;
+f = imread ('checkerboard1024-shaded.tif');
+f = im2double(f);
+figure(1);
+subplot(2,3,1); imshow(f);
+w6 = fspecial('gaussian', [401 401], 101);
+g6 = imfilter(f,w6, 'replicate');
+subplot(2,3,2); imshow(g6);
+g7 = f ./ g6;
+subplot(2,3,3); imshow(g7/max(max(g7)));
+g8 = f>0.5;
+subplot(2,3,4); imshow(g8);
+g9 = g7>0.5*max(max(g7));
+subplot(2,3,6); imshow(g9);
