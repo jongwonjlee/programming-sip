@@ -15,4 +15,4 @@ and so on.
 
 If you want to see some sample results, please visit the website: <https://www.jongwonlee.site/main/miscellaneous-projects>
 
-All packages are tested on ROS Kinetic, Ubuntu 16.04 LTS.
+All packages are tested in MATLAB R2018a.
