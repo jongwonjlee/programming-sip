@@ -1,6 +1,6 @@
 # Programming for Signal and Image Processing
 
-Implementation of essential signal and image processing algorithms and functions in MATLAB. This material include:
+Implementation of essential signal and image processing algorithms and functions in MATLAB. This material includes:
 - fourier series
 - data filtering in frequency domain
 - sampling and augmentation
